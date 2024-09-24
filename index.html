@@ -31,15 +31,15 @@
             <!--Navbar End-->
             <!--Features Start-->
             <div class="flex justify-center mt-14 gap-6">
-                <button id="" class="btn bg-[#ABEF5F] text-xl px-8 font-semibold hover:bg-[#8ea96e]">Donation</button>
-                <button id="" class="btn btn-outline text-xl px-8 font-semibold hover:bg-[#cdf69b] hover:text-black">History</button>
+                <button id="btn-donate" class="btn btn-outline bg-[#ABEF5F] text-xl px-8 font-semibold hover:bg-[#8ea96e]">Donation</button>
+                <button id="btn-history" class="btn btn-outline text-xl px-8 font-semibold hover:bg-[#cdf69b] hover:text-black">History</button>
             </div>
             <!--Features End-->
         </div>
     </header>
     <main class="container mx-auto mt-8 mb-12">
         <!--Donation page start-->
-        <section>
+        <section id="donation-data" class="">
             <!--Single card Container-1-->
            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-11">
                 <div>
@@ -97,9 +97,9 @@
         </section>
         <!--Donation page end-->
         <!--History page start-->
-        <section>
-            <div id="history-container" class="border rounded-lg">
-
+        <section id="history-data" class="hidden mt-11 mb-11">
+            <div id="history-container" class="space-y-4">
+                
             </div>
         </section>
         <!--History page end-->
@@ -107,6 +107,7 @@
     </main>
     <script src="js/functions.js"></script>
     <script src="js/donate.js"></script>
+    <script src="js/toggler.js"></script>
 
     <!--Modal start-->
     <!-- Open the modal using ID.showModal() method -->

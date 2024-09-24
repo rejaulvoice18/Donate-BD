@@ -15,3 +15,13 @@ function getTextFieldValueById(id){
     const textNumber = parseFloat(textValue);
     return textNumber;
 }
+
+// btn toggler
+
+function showSectionById(id){
+    document.getElementById('donation-data').classList.add('hidden');
+    document.getElementById('history-data').classList.add('hidden');
+
+    // Showing section with the provided ID as parameter
+    document.getElementById(id).classList.remove('hidden');
+}
