@@ -1,6 +1,8 @@
 
 document.getElementById('btn-donate-noakhali').addEventListener('click', function(event){
     event.preventDefault();
+    console.log(event.document.event);
+    
     const donateAmount = getInputFieldValueById('input-donate-money');
     const savingBalance = getTextFieldValueById('saving-balance');
    
@@ -20,6 +22,10 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
 
         // modal
         document.getElementById('my_modal_5').showModal()
+
+        // add to transaction history
+
+        const div = document.createElement('div');
     }
     else{
         alert("This is not a number or negetive number or greater than available balance");
