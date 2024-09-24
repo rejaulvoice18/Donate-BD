@@ -1,8 +1,7 @@
 
 document.getElementById('btn-donate-noakhali').addEventListener('click', function(event){
     event.preventDefault();
-    console.log(event.document.event);
-    
+       
     const donateAmount = getInputFieldValueById('input-donate-money');
     const savingBalance = getTextFieldValueById('saving-balance');
    
